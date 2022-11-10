@@ -1,3 +1,4 @@
+-- 启用指定的主题
 local colorscheme = "tokyonight"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)

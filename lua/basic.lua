@@ -6,6 +6,9 @@ vim.o.fileencoding = "utf-8"
 vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
 
+-- 行号
+vim.wo.number = true
+
 -- 缩进4个空格等于一个Tab
 vim.o.tabstop = 4
 vim.bo.tabstop = 4

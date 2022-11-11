@@ -25,6 +25,12 @@ return require('packer').startup(function(use)
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
     })
+
+    -- bufferline
+    use({
+        "akinsho/bufferline.nvim",
+        requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" },
+    })
 end)
 
 

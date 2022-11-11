@@ -16,8 +16,14 @@ return require('packer').startup(function(use)
     -------------------------- plugins -------------------------------------------
     -- nvim-tree
     use({
-      "kyazdani42/nvim-tree.lua",
-      requires = "kyazdani42/nvim-web-devicons",
+        "kyazdani42/nvim-tree.lua",
+        requires = "kyazdani42/nvim-web-devicons",
+    })
+
+    -- treesitter
+    use({
+        "nvim-treesitter/nvim-treesitter",
+        run = ":TSUpdate",
     })
 end)
 

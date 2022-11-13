@@ -16,6 +16,9 @@ require("colorscheme")
 require("plugin-config.nvim-tree")
 require("plugin-config.nvim-treesitter")
 require("plugin-config.bufferline")
+require("plugin-config.telescope")
 
 -- 内置LSP
 require("lsp.setup")
+-- 自动补全
+require("cmp.setup")

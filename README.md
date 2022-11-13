@@ -27,6 +27,11 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 Run `:PackerSync` in NeoVim.
 
 
+## 4. other dependencies
+
+`apt install ripgrep` for telescope live_grep.
+
+
 ## Usage
 
 Leader key is space.

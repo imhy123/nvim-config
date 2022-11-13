@@ -32,6 +32,14 @@ packer.startup(function(use)
         requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" },
     })
 
+    -- telescope
+    -- apt install ripgrep for live_grep
+    use {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.0',
+        requires = { {'nvim-lua/plenary.nvim'} },
+    }
+
     --------------------- LSP --------------------
     -- installer
     use({ "williamboman/mason.nvim" })
@@ -40,6 +48,9 @@ packer.startup(function(use)
     use({ "neovim/nvim-lspconfig" })
     -- 补全引擎
     use("hrsh7th/nvim-cmp")
+    -- Snippet 引擎
+    use({"L3MON4D3/LuaSnip", tag = "v1.*"})
+    use("saadparwaiz1/cmp_luasnip")
     -- 补全源
     use("hrsh7th/cmp-vsnip")
     use("hrsh7th/cmp-nvim-lsp") -- { name = nvim_lsp }

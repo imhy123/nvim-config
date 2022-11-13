@@ -19,6 +19,14 @@ local M = {
         close = "<leader>w",
     },
 
+    telescope = {
+
+        enable = true,
+
+        find_files = "<leader>ff",
+        live_grep = "<leader>fg",
+    },
+
     lsp = {
         rename = "<leader>rn",
         code_action = "<leader>ca",

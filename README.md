@@ -39,6 +39,8 @@ Leader key is space.
 Filer Explorer:
 
 * Enter or o : open file
+* a : add a file; leaving a trailing `/` will add a directory
+* d : delete a file (will prompt for confirmation)
 
 bufferline / tab manage :
 

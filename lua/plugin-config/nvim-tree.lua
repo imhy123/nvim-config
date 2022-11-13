@@ -1,3 +1,10 @@
+local baseConfig = require("baseconfig")
+local pluginConfig = baseConfig.nvimTree
+
+if pluginConfig == nil or not pluginConfig.enable then
+    return
+end
+
 -- https://github.com/kyazdani42/nvim-tree.lua
 -- local nvim_tree = require'nvim-tree'
 local status, nvim_tree = pcall(require, "nvim-tree")
@@ -14,3 +21,6 @@ nvim_tree.setup({
         enable = false,
     },
 })
+
+
+keymap("n", pluginConfig.toggle, ":NvimTreeToggle<CR>")

@@ -1,3 +1,5 @@
+require("utils.global")
+
 -- 基础配置
 require("basic")
 
@@ -14,3 +16,6 @@ require("colorscheme")
 require("plugin-config.nvim-tree")
 require("plugin-config.nvim-treesitter")
 require("plugin-config.bufferline")
+
+-- 内置LSP
+require("lsp.setup")

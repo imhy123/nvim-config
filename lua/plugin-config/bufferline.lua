@@ -1,3 +1,10 @@
+local baseConfig = require("baseconfig")
+local pluginConfig = baseConfig.bufferLine
+
+if pluginConfig == nil or not pluginConfig.enable then
+    return
+end
+
 local status, bufferline = pcall(require, "bufferline")
 if not status then
     vim.notify("bufferline is not found!")
@@ -19,3 +26,9 @@ bufferline.setup({
         },
     },
 })
+
+-- 左右Tab切换
+keymap("n", pluginConfig.prev, ":BufferLineCyclePrev<CR>")
+keymap("n", pluginConfig.next, ":BufferLineCycleNext<CR>")
+-- "moll/vim-bbye" 关闭当前 buffer
+keymap("n", pluginConfig.close, ":Bdelete!<CR>")

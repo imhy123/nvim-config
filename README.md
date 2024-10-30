@@ -1,3 +1,5 @@
+Just use [AstroNvim](https://astronvim.com/) instead!
+
 ## 1. instal Neovim
 
 [Installing Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
@@ -29,7 +31,7 @@ brew install neovim
 ## 2. clone config
 
 ```
-git clone https://github.com/imhy123/nvim-config\
+git clone git@github.com:imhy123/nvim-config.git\
  ~/.config/nvim
 ```
 

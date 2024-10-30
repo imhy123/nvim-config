@@ -32,9 +32,9 @@ mason.setup({
 -- https://github.com/williamboman/mason-lspconfig.nvim/blob/main/doc/server-mapping.md
 mason_config.setup({
     ensure_installed = {
-        "sumneko_lua",
         "clangd",
         "cmake",
+        "gopls",
     },
 })
 
@@ -43,9 +43,9 @@ mason_config.setup({
 -- key 必须为下列网址列出的 server name，不可以随便写
 -- https://github.com/williamboman/nvim-lsp-installer#available-lsps
 local servers = {
-    sumneko_lua = require("lsp.config.lua"), -- lua/lsp/config/lua.lua
     clangd = require("lsp.config.clangd"),
     cmake = require("lsp.config.cmake"),
+    cmake = require("lsp.config.gopls"),
 }
 
 for name, config in pairs(servers) do

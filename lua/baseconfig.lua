@@ -2,10 +2,10 @@ local M = {
 
     keys = {
         leader_key = " ",
+        local_leader_key = "\\"
     },
 
     nvimTree = {
-
         enable = true,
 
         toggle = "<leader>m",
@@ -20,7 +20,6 @@ local M = {
     },
 
     telescope = {
-
         enable = true,
 
         find_files = "<leader>ff",

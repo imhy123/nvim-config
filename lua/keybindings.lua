@@ -3,8 +3,7 @@ local keys = baseConfig.keys
 
 -- leader key 设置
 vim.g.mapleader = keys.leader_key
-vim.g.maplocalleader = keys.leader_key
-
+vim.g.maplocalleader = keys.local_leader_key
 
 --------------------------------------------------------------------
 
